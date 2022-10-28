@@ -23,8 +23,13 @@ namespace HttpGateway.Data
 				{
 					AuthorId = 2,
 					Name = "Jane Smith"
-				}
-			};
+				},
+                new Author
+                {
+                    AuthorId = 3,
+                    Name = "Jerry Idol"
+                }
+            };
 		}
 
 		public IEnumerable<Author> GetAuthors() => _authors;
